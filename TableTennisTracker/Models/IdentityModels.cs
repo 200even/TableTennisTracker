@@ -29,5 +29,7 @@ namespace TableTennisTracker.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Player> Players { get; set; }
     }
 }
