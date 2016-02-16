@@ -1,0 +1,30 @@
+﻿<!-- Home View-->
+
+<header class=" my-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <h1>Top Players</h1>
+                    <hr class="star-light">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <table class="table tab-content">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Rating</td>
+                                </tr>
+                            </thead>
+                            <tbody ng-repeat="player in topPlayers | orderBy:sortType:sortReverse | limitTo:5">
+                                <tr>
+                                    <td>{{player.Nickname}}</td>
+                                    <td>{{player.Rating}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

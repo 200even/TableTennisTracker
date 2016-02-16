@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TableTennisTracker.Models.Player>
+
+@{
+    ViewBag.Title = "Game";
+}
+
+<h2>Game</h2>
+<div class="row">
+    <div class="col-xs-6">
+        <h1>@Model.FirstOrDefault().Nickname</h1>
+        <button type="submit">Winner</button>
+    </div>
+    <div class="col-xs-6">
+        <h1>@Model.LastOrDefault().Nickname</h1>
+        <button type="submit">Winner</button>
+    </div>
+</div>
+

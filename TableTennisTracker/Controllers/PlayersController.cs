@@ -46,8 +46,11 @@ namespace TableTennisTracker.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Nickname,OpponentsTotalRating,Wins,Losses,TotalGamesPlayed,Rating")] Player player)
+        public ActionResult Create(Player player)
         {
+            player.TotalGamesPlayed = player.Wins + player.Losses;
+            player.Rating = Player.getRating(player);
+
             if (ModelState.IsValid)
             {
                 db.Players.Add(player);
@@ -78,8 +81,11 @@ namespace TableTennisTracker.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Nickname,OpponentsTotalRating,Wins,Losses,TotalGamesPlayed,Rating")] Player player)
+        public ActionResult Edit(Player player)
         {
+            player.TotalGamesPlayed = player.Wins + player.Losses;
+            player.Rating = Player.getRating(player);
+            
             if (ModelState.IsValid)
             {
                 db.Entry(player).State = EntityState.Modified;

@@ -19,7 +19,7 @@ namespace TableTennisTracker.Models
         [DefaultValue(1300)]
         public int Rating { get; set; }
 
-        public Player scoreGame(Player player, int opponentRating, bool isWin)
+        public static Player scoreGame(Player player, int opponentRating, bool isWin)
         {
             //Set wins and losses
             if (isWin)
@@ -38,9 +38,15 @@ namespace TableTennisTracker.Models
             player.TotalGamesPlayed = player.TotalGamesPlayed++;
 
             //Set Rating
-            player.Rating = ((1300 * 23) + player.OpponentsTotalRating + (400 * (player.Wins - player.Losses))) / (23 + player.TotalGamesPlayed);
+            player.Rating = getRating(player);
 
             return player;
+        }
+
+        public static int getRating(Player player)
+        {
+            int r = ((1300 * 23) + player.OpponentsTotalRating + (400 * (player.Wins - player.Losses))) / (23 + player.TotalGamesPlayed);
+            return r;
         }
     }
 
