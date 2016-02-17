@@ -242,6 +242,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlayersController.cs" />
+    <Compile Include="Controllers\v1\GamesController.cs" />
     <Compile Include="Controllers\v1\PlayersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -254,8 +255,13 @@
     <Compile Include="Migrations\201602122211408_DefaultVal.Designer.cs">
       <DependentUpon>201602122211408_DefaultVal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602161442267_GameTable.cs" />
+    <Compile Include="Migrations\201602161442267_GameTable.Designer.cs">
+      <DependentUpon>201602161442267_GameTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Game.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Player.cs" />
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201602122211408_DefaultVal.resx">
       <DependentUpon>201602122211408_DefaultVal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602161442267_GameTable.resx">
+      <DependentUpon>201602161442267_GameTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

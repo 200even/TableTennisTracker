@@ -18,10 +18,10 @@ angular.module("myApp")
             templateUrl: 'App/Pages/PlayerTable/playerTable.html',
             controller: 'playerTableController'
         })
-        .state('About', {
-            url: '/About',
-            templateUrl: 'App/Pages/About/about.html',
-            controller: 'aboutController'
+        .state('Game', {
+            url: '/Game',
+            templateUrl: 'App/Pages/Game/game.html',
+            controller: 'gameController'
         })
         .state('Contactus', {
             url: '/Contactus',

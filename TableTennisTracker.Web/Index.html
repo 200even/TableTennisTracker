@@ -15,8 +15,7 @@
     <link href="Theme/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="Theme/css/site.css" rel="stylesheet">
-    
+    <link href="App/site.min.css" rel="stylesheet" />
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -34,7 +33,7 @@
 <body id="page-top" class="index" ng-app="myApp">
 
     <!-- Header -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -54,13 +53,13 @@
                         <a href="#/home"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#/NewGame">New Game</a>
+                        <a href='' ui-sref="Game">New Game</a>
                     </li>
                     <li class="page-scroll">
                         <a href="" ui-sref="PlayerTable">Player Table</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#/Contactus">Report an Issue</a>
+                        <a href="" ui-sref="Contactus">Report an Issue</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +67,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div class="clearfix"></div>
 
     <!-- Render pages here dynamically using ui-route -->
     <!-- See route configrations on App/app.Routing.js-->
@@ -107,7 +105,7 @@
     <script src="App/Pages/Home/homeController.js"></script>
     <script src="App/Pages/ContactUs/contactusController.js"></script>
     <script src="App/Pages/PlayerTable/playerTableController.js"></script>
-
+    <script src="App/Pages/Game/gameController.js"></script>
     <!-- End Entrollers for the page-->
     <!-- services & factories-->
     <!-- END  services-->

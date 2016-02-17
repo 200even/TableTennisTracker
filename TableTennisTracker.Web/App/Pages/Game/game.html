@@ -1,0 +1,73 @@
+﻿<div class="container">
+    <div class="row" align="center"><button class="btn btn-success">Start Game</button></div>
+    <div class="row">
+        <div class="col-xs-6" align="center">
+            <h1>{{player1.Nickname}}</h1>
+            <h3>{{player1.Rating}}</h3>
+        </div>
+        <div class="col-xs-6" align="center">
+            <h1>{{player2.Nickname}}</h1>
+            <h3>{{player2.Rating}}</h3>
+        </div>
+
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6">
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search Players" ng-model="searchPlayers1" />
+                    </div>
+                </div>
+            </form>
+            <h1>Player 1</h1>
+            <table class="table tab-content">
+                <thead>
+                    <tr>
+                        <td>
+                            <span class="thead-clickable" ng-click="sortType = 'Nickname'; sortReverse = !sortReverse">
+                                Player Name / Nickname
+                            </span>
+                        </td>
+                </thead>
+                <tbody ng-repeat="player in players | orderBy:sortType:sortReverse | filter:searchPlayers1">
+                    <tr class="game-row" ng-click="setPlayer1(player)" ng-hide="player === player2">
+                        <td>{{player.Nickname}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-6">
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search Players" ng-model="searchPlayers2" />
+                    </div>
+                </div>
+            </form>
+            <h1>Player 2</h1>
+            <table class="table tab-content">
+                <thead>
+                    <tr>
+                        <td>
+                            <span class="thead-clickable" ng-click="sortType = 'Nickname'; sortReverse = !sortReverse">
+                                Player Name / Nickname
+                            </span>
+                        </td>
+                </thead>
+                <tbody ng-repeat="player in players | orderBy:sortType:sortReverse | filter:searchPlayers2">
+                    <tr class="game-row" ng-click="setPlayer2(player)" ng-hide="player === player1">
+                        <td>{{player.Nickname}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

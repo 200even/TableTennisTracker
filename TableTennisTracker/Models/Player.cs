@@ -24,18 +24,18 @@ namespace TableTennisTracker.Models
             //Set wins and losses
             if (isWin)
             {
-                player.Wins = player.Wins++;
+                player.Wins = player.Wins + 1;
             }
             else
             {
-                player.Losses = player.Losses++;
+                player.Losses = player.Losses + 1;
             }
             
             //Set OTR
             player.OpponentsTotalRating += opponentRating;
 
             //Set TGP
-            player.TotalGamesPlayed = player.TotalGamesPlayed++;
+            player.TotalGamesPlayed = player.TotalGamesPlayed + 1;
 
             //Set Rating
             player.Rating = getRating(player);

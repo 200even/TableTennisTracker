@@ -11,4 +11,8 @@ angular.module("myApp", [
 
     // Angular modules
     'ui.router', // state routing
-]);
+])
+    .run(function ($rootScope, $state, $stateParams) {
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
+    });

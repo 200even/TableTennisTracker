@@ -58,8 +58,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Components\Services\apiService.js" />
+    <Content Include="App\Pages\Game\game.html" />
+    <Content Include="App\Pages\Game\gameController.js" />
     <Content Include="App\Pages\PlayerTable\playerTable.html" />
     <Content Include="App\Pages\PlayerTable\playerTableController.js" />
+    <Content Include="App\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="App\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="Theme\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Theme\font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="Theme\font-awesome\fonts\fontawesome-webfont.woff" />
@@ -85,6 +93,10 @@
     <Content Include="Theme\LICENSE" />
     <Content Include="Theme\mail\contact_me.php" />
     <Content Include="Theme\README.md" />
+    <Content Include="App\site.less" />
+    <Content Include="App\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\firstoriongames.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,20 +106,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\app.css" />
     <Content Include="App\app.js" />
     <Content Include="App\appRouting.js" />
     <Content Include="App\Components\myAppCore.js" />
-    <Content Include="App\Pages\About\about.html" />
-    <Content Include="App\Pages\About\aboutController.js" />
     <Content Include="App\Pages\ContactUs\contactus.html" />
     <Content Include="App\Pages\ContactUs\contactusController.js" />
     <Content Include="App\Pages\Home\home.html" />
     <Content Include="App\Pages\Home\homeController.js" />
     <Content Include="App\Pages\myAppPages.js" />
     <Content Include="App\Pages\NotFound\notFound.html" />
-    <Content Include="App\Pages\Portfolio\portfolio.html" />
-    <Content Include="App\Pages\Portfolio\portfolioController.js" />
     <Content Include="Index.html" />
     <Content Include="References\Angular\angular-route.js" />
     <Content Include="References\Angular\angular-ui-router.js" />
@@ -123,7 +130,6 @@
     <Content Include="References\Others\Plugins\bootstrap-multiselect\js\bootstrap-multiselect.js" />
     <Content Include="Theme\css\bootstrap.css" />
     <Content Include="Theme\css\bootstrap.min.css" />
-    <Content Include="Theme\css\site.css" />
     <Content Include="Theme\font-awesome\css\font-awesome.css" />
     <Content Include="Theme\font-awesome\css\font-awesome.min.css" />
     <Content Include="Theme\font-awesome\fonts\fontawesome-webfont.svg" />

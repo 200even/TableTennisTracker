@@ -7,16 +7,28 @@ angular.module("myApp.Pages").controller("playerTableController", function ($sco
     $http.get("http://tabletennistracker.azurewebsites.net/api/players")
         .then(function (response) { $scope.players = response.data; });
     $scope.addPlayer = function () {
-        $scope.players.push({
-            'FirstName': $scope.name,
-            'LastName': $scope.email,
-            'Nickname': $scope.phone
+        var request = ({
+            method: 'POST',
+            url: 'http://tabletennistracker.azurewebsites.net/api/players',
+            data: {
+                FirstName: $scope.FirstName,
+                LastName: $scope.LastName,
+                Nickname: $scope.Nickname
+            }
         });
+        $http(request).then(
+        $scope.players.push({
+            'FirstName': $scope.FirstName,
+            'LastName': $scope.LastName,
+            'Nickname': $scope.Nickname,
+            'Wins': 0,
+            'Losses': 0,
+            'TotalGamesPlayed': 0,
+            'Rating': 1300
+        }));
 
-        alert($scope.name + " has been added to the customer list.");
-
-        $scope.name = '',
-          $scope.email = '',
-          $scope.phone = '';
+        $scope.FirstName = '',
+          $scope.LastName = '',
+          $scope.Nickname = '';
     };
 });
