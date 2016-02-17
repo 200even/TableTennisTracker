@@ -1,5 +1,5 @@
 ﻿<div class="container">
-    <div class="row" align="center"><button class="btn btn-success">Start Game</button></div>
+    <div class="row" align="center"><button class="btn btn-lg btn-success" ng-click="startGame()" ng-disabled="player1 == null || player2 == null">Start Game</button></div>
     <div class="row">
         <div class="col-xs-6" align="center">
             <h1>{{player1.Nickname}}</h1>

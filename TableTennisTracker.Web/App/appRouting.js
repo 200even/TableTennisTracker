@@ -21,7 +21,13 @@ angular.module("myApp")
         .state('Game', {
             url: '/Game',
             templateUrl: 'App/Pages/Game/game.html',
-            controller: 'gameController'
+            controller: 'gameController',
+            controllerAs: 'gameCtrl'
+        })
+        .state('ScoreGame', {
+            url: '/CurrentGame',
+            templateUrl: 'App/Pages/ScoreGame/scoreGame.html',
+            controller: 'ScoreGameController'
         })
         .state('Contactus', {
             url: '/Contactus',

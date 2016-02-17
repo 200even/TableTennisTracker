@@ -58,10 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Components\Services\apiService.js" />
+    <Content Include="App\Components\Services\playerService.js" />
     <Content Include="App\Pages\Game\game.html" />
     <Content Include="App\Pages\Game\gameController.js" />
     <Content Include="App\Pages\PlayerTable\playerTable.html" />
     <Content Include="App\Pages\PlayerTable\playerTableController.js" />
+    <Content Include="App\Pages\ScoreGame\scoreGame.html" />
+    <Content Include="App\Pages\ScoreGame\ScoreGameController.js" />
     <Content Include="App\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -90,6 +93,8 @@
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Theme\img\me.jpg" />
+    <Content Include="Theme\img\pingpongball.png" />
+    <Content Include="Theme\img\Ping_Pong.png" />
     <Content Include="Theme\LICENSE" />
     <Content Include="Theme\mail\contact_me.php" />
     <Content Include="Theme\README.md" />

@@ -312,4 +312,26 @@ footer .footer-below {
 .game-row {
   cursor: pointer;
 }
+html {
+  overflow: hidden;
+}
+.gameTable {
+  padding-top: 100px;
+  margin-top: 10%;
+  background: #18bc9c;
+  opacity: .7;
+  height: 400px;
+  cursor: pointer;
+}
+.gameTable:hover {
+  background: #07ab8b;
+}
+.gameTable > h1 {
+  color: #FFF;
+  font-size: 100px;
+}
+.netBorder {
+  border-right: dashed;
+  border-right-color: #2c3e50;
+}
 /*# sourceMappingURL=site.css.map */
