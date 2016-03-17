@@ -5,7 +5,6 @@
 
 angular.module("myApp", [
     // User defined modules
-    'myApp.Templates', // templates
     'myApp.Pages', // Pages
     'myApp.Core', // Core
 

@@ -1,9 +1,10 @@
 ﻿
 angular.module("myApp.Pages").controller("playerTableController", function ($scope, $http) {
-
+    window.$scope = $scope;
     $scope.sortType = 'Nickname';
     $scope.sortReverse = false;
     $scope.searchPlayers = '';
+    $scope.showSecret = false;
     $http.get("http://tabletennistracker.azurewebsites.net/api/players")
         .then(function (response) { $scope.players = response.data; });
     $scope.addPlayer = function () {

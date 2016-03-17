@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <Content Include="App\Components\Services\apiService.js" />
     <Content Include="App\Components\Services\playerService.js" />
     <Content Include="App\Pages\Game\game.html" />
@@ -103,6 +106,10 @@
     <Content Include="App\site.css.map">
       <DependentUpon>site.css</DependentUpon>
     </Content>
+    <Content Include="App\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\firstoriongames %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\firstoriongames.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
