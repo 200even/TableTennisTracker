@@ -1,5 +1,5 @@
 ﻿
-angular.module("myApp.Pages").controller("homeController", function ($scope, $http, $state) {
+angular.module("myApp.Pages").controller("homeController", ['$scope', '$http', '$state', function ($scope, $http, $state) {
 
     $scope.sortType = 'Rating';
     $scope.sortReverse = true;
@@ -13,4 +13,4 @@ angular.module("myApp.Pages").controller("homeController", function ($scope, $ht
     $scope.newGame = function () {
         $state.go('Game');
     };
-});
+}]);

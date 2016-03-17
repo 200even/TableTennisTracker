@@ -1,4 +1,4 @@
-﻿angular.module("myApp.Pages").controller('gameController', function ($scope, $state, $http, playerService) {
+﻿angular.module("myApp.Pages").controller('gameController', ['$scope', '$state', '$http', 'playerService', function ($scope, $state, $http, playerService) {
     $scope.sortType = 'Nickname';
     $scope.sortReverse = false;
     $scope.searchPlayers1 = '';
@@ -20,4 +20,4 @@
         $state.go('ScoreGame');
     };
     
-});
+}]);

@@ -1,4 +1,4 @@
-﻿angular.module("myApp.Core", []).service('playerService', function ($http) {
+﻿angular.module("myApp.Core", []).service('playerService', ['$http', function ($http) {
     var firstPlayer = {};
     var secondPlayer = {};
     var players = [];
@@ -35,4 +35,4 @@
         getSecondPlayer: getSecondPlayer,
         getPlayers: getPlayers
     };
-});
+}]);

@@ -1,5 +1,5 @@
 ﻿
-angular.module("myApp.Pages").controller("playerTableController", function ($scope, $http) {
+angular.module("myApp.Pages").controller("playerTableController", ['$scope', '$http', function ($scope, $http) {
     window.$scope = $scope;
     $scope.sortType = 'Nickname';
     $scope.sortReverse = false;
@@ -32,4 +32,4 @@ angular.module("myApp.Pages").controller("playerTableController", function ($sco
           $scope.LastName = '',
           $scope.Nickname = '';
     };
-});
+}]);

@@ -4,10 +4,6 @@
 /// Use a proper name for your module
 
 angular.module("myApp", [
-    // User defined modules
-    'myApp.Pages', // Pages
-    'myApp.Core', // Core
-
     // Angular modules
     'ui.router', // state routing
 ])

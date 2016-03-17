@@ -60,14 +60,49 @@
     <Content Include="App\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
-    <Content Include="App\Components\Services\apiService.js" />
+    <Content Include="App\appRouting.min.js">
+      <DependentUpon>appRouting.js</DependentUpon>
+    </Content>
     <Content Include="App\Components\Services\playerService.js" />
+    <Content Include="App\Components\Services\playerService.min.js">
+      <DependentUpon>playerService.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\ContactUs\contactus.min.html">
+      <DependentUpon>contactus.html</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\ContactUs\contactusController.min.js">
+      <DependentUpon>contactusController.js</DependentUpon>
+    </Content>
     <Content Include="App\Pages\Game\game.html" />
+    <Content Include="App\Pages\Game\game.min.html">
+      <DependentUpon>game.html</DependentUpon>
+    </Content>
     <Content Include="App\Pages\Game\gameController.js" />
+    <Content Include="App\Pages\Game\gameController.min.js">
+      <DependentUpon>gameController.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\Home\home.min.html">
+      <DependentUpon>home.html</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\Home\homeController.min.js">
+      <DependentUpon>homeController.js</DependentUpon>
+    </Content>
     <Content Include="App\Pages\PlayerTable\playerTable.html" />
+    <Content Include="App\Pages\PlayerTable\playerTable.min.html">
+      <DependentUpon>playerTable.html</DependentUpon>
+    </Content>
     <Content Include="App\Pages\PlayerTable\playerTableController.js" />
+    <Content Include="App\Pages\PlayerTable\playerTableController.min.js">
+      <DependentUpon>playerTableController.js</DependentUpon>
+    </Content>
     <Content Include="App\Pages\ScoreGame\scoreGame.html" />
+    <Content Include="App\Pages\ScoreGame\scoreGame.min.html">
+      <DependentUpon>scoreGame.html</DependentUpon>
+    </Content>
     <Content Include="App\Pages\ScoreGame\ScoreGameController.js" />
+    <Content Include="App\Pages\ScoreGame\ScoreGameController.min.js">
+      <DependentUpon>ScoreGameController.js</DependentUpon>
+    </Content>
     <Content Include="App\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -109,6 +144,27 @@
     <Content Include="App\app.min.js.map">
       <DependentUpon>app.min.js</DependentUpon>
     </Content>
+    <Content Include="App\Pages\ContactUs\contactusController.min.js.map">
+      <DependentUpon>contactusController.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\Game\gameController.min.js.map">
+      <DependentUpon>gameController.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\Home\homeController.min.js.map">
+      <DependentUpon>homeController.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\PlayerTable\playerTableController.min.js.map">
+      <DependentUpon>playerTableController.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\Pages\ScoreGame\ScoreGameController.min.js.map">
+      <DependentUpon>ScoreGameController.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\appRouting.min.js.map">
+      <DependentUpon>appRouting.min.js</DependentUpon>
+    </Content>
+    <Content Include="App\Components\Services\playerService.min.js.map">
+      <DependentUpon>playerService.min.js</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\firstoriongames %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\firstoriongames.pubxml" />
     <None Include="Web.Debug.config">
@@ -121,12 +177,10 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\appRouting.js" />
-    <Content Include="App\Components\myAppCore.js" />
     <Content Include="App\Pages\ContactUs\contactus.html" />
     <Content Include="App\Pages\ContactUs\contactusController.js" />
     <Content Include="App\Pages\Home\home.html" />
     <Content Include="App\Pages\Home\homeController.js" />
-    <Content Include="App\Pages\myAppPages.js" />
     <Content Include="App\Pages\NotFound\notFound.html" />
     <Content Include="Index.html" />
     <Content Include="References\Angular\angular-route.js" />

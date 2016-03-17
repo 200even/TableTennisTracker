@@ -10,28 +10,28 @@ angular.module("myApp")
     .config(["$stateProvider", function ($stateProvider) {
         $stateProvider.state('Home', {
             url: '/home',
-            templateUrl: 'App/Pages/Home/home.html',
+            templateUrl: 'App/Pages/Home/home.min.html',
             controller: 'homeController'
         })
         .state('PlayerTable', {
             url: '/PlayerTable',
-            templateUrl: 'App/Pages/PlayerTable/playerTable.html',
+            templateUrl: 'App/Pages/PlayerTable/playerTable.min.html',
             controller: 'playerTableController'
         })
         .state('Game', {
             url: '/Game',
-            templateUrl: 'App/Pages/Game/game.html',
+            templateUrl: 'App/Pages/Game/game.min.html',
             controller: 'gameController',
             controllerAs: 'gameCtrl'
         })
         .state('ScoreGame', {
             url: '/CurrentGame',
-            templateUrl: 'App/Pages/ScoreGame/scoreGame.html',
+            templateUrl: 'App/Pages/ScoreGame/scoreGame.min.html',
             controller: 'ScoreGameController'
         })
         .state('Contactus', {
             url: '/Contactus',
-            templateUrl: 'App/Pages/ContactUs/contactus.html',
+            templateUrl: 'App/Pages/ContactUs/contactus.min.html',
             controller: 'contactusController'
         })
         .state("otherwise", {
