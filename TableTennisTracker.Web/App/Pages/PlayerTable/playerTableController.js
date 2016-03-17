@@ -1,5 +1,5 @@
 ﻿
-angular.module("myApp.Pages").controller("playerTableController", ['$scope', '$http', function ($scope, $http) {
+angular.module("myApp").controller("playerTableController", ['$scope', '$http', function ($scope, $http) {
     window.$scope = $scope;
     $scope.sortType = 'Nickname';
     $scope.sortReverse = false;

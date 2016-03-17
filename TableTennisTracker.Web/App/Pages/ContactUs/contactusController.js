@@ -1,5 +1,5 @@
 ﻿
-angular.module("myApp.Pages").controller("contactusController", ['$scope', function ($scope) {
+angular.module("myApp").controller("contactusController", ['$scope', function ($scope) {
     // Contact us controller
 
 }]);

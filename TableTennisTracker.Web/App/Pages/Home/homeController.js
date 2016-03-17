@@ -1,5 +1,5 @@
 ﻿
-angular.module("myApp.Pages").controller("homeController", ['$scope', '$http', '$state', function ($scope, $http, $state) {
+angular.module("myApp").controller("homeController", ['$scope', '$http', '$state', function ($scope, $http, $state) {
 
     $scope.sortType = 'Rating';
     $scope.sortReverse = true;

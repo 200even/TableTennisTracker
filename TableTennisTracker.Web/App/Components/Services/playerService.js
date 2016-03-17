@@ -1,4 +1,4 @@
-﻿angular.module("myApp.Core", []).service('playerService', ['$http', function ($http) {
+﻿angular.module("myApp").service('playerService', ['$http', function ($http) {
     var firstPlayer = {};
     var secondPlayer = {};
     var players = [];

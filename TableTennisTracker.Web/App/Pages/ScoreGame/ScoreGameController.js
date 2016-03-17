@@ -1,4 +1,4 @@
-﻿angular.module("myApp.Pages").controller('ScoreGameController', ['$scope', 'playerService', '$http', '$state', function ($scope, playerService, $http, $state) {
+﻿angular.module("myApp").controller('ScoreGameController', ['$scope', 'playerService', '$http', '$state', function ($scope, playerService, $http, $state) {
     $scope.isGameOver = false;
     $scope.player1 = playerService.getFirstPlayer();
     $scope.player2 = playerService.getSecondPlayer();
