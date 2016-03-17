@@ -1,5 +1,6 @@
 ﻿@color1: #18bc9c;
 @color2: #2c3e50;
+@mobile: ~"(max-width: 529px)";
 
 .thead-clickable {
     cursor: pointer;
@@ -154,7 +155,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -378,7 +379,7 @@ footer .footer-below {
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .gameTable {
@@ -388,6 +389,18 @@ html {
     opacity: .7;
     height: 400px;
     cursor: pointer;
+}
+
+@media @mobile {
+    .gameTable > h1 {
+        color: #FFF;
+        font-size: 20px;
+    }
+
+    .gameTable {
+        padding-top: 20px;
+        height: auto;
+    }
 }
 
 .gameTable:hover {
@@ -402,4 +415,19 @@ html {
 .netBorder {
     border-right: dashed;
     border-right-color: @color2;
+}
+
+.play {
+    cursor: pointer;
+    font-size: 60px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.play:hover {
+    color: @color2;
 }

@@ -84,12 +84,13 @@ namespace TableTennisTracker.Controllers.v1
 
             //Match the players in the database
             Player winner = db.Players.FirstOrDefault(p => p.Id == game.Winner.Id);
+            int winnerRating = int.Parse(String.Copy(winner.Rating.ToString()));
             Player loser = db.Players.FirstOrDefault(p => p.Id == game.Loser.Id);
 
 
             //Adjust player stats
             Player scoredWinner = Player.scoreGame(winner, loser.Rating, true);
-            Player scoredLoser = Player.scoreGame(loser, winner.Rating, false);
+            Player scoredLoser = Player.scoreGame(loser, winnerRating, false);
 
             //Update players for the response
             game.Winner = scoredWinner;

@@ -92,6 +92,7 @@
     <Content Include="Theme\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Theme\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Theme\img\grey-spinner.gif" />
     <Content Include="Theme\img\me.jpg" />
     <Content Include="Theme\img\pingpongball.png" />
     <Content Include="Theme\img\Ping_Pong.png" />

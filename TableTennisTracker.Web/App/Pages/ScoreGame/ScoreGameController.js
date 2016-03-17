@@ -8,7 +8,7 @@
     };
 
     $scope.scoreGame = function (winner, loser) {
-        var date = new Date("2016-02-17T12:00:00");
+        var date = new Date();
         var request = ({
             method: 'POST',
             url: 'http://tabletennistracker.azurewebsites.net/api/games',
